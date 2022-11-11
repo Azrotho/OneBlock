@@ -1,0 +1,20 @@
+name: OneBlock
+main: fr.azrotho.oneblock.Main
+version: 1.0
+api-version: 1.17
+author: Azrotho
+description: OneBlock plugin for Minecraft 1.18
+website: https://azrotho.fr
+commands:
+  spawnblock:
+    description: Spawn a block
+    usage: /spawnblock
+    aliases: [sb]
+  choosewave:
+    description: Choose a wave
+    usage: /choosewave
+    aliases: [cw, choosebiome, cb, biome, b]
+  saveconfig:
+    description: Save the config
+    usage: /saveconfig
+    aliases: [sc]
