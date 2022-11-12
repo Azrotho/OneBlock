@@ -21,19 +21,19 @@ public class OnBlockBreak implements Listener {
             Main.blockMined++;
 
             if(Main.blockMined == 1000){
-                Bukkit.broadcastMessage("§a§lVous avez débloqué le §e§lDésert !");
+                Bukkit.broadcastMessage("§a§lYou have unlocked the §e§lDesert !");
             }
             if(Main.blockMined == 2500){
-                Bukkit.broadcastMessage("§a§lVous avez débloqué la §f§lMine !");
+                Bukkit.broadcastMessage("§a§lYou have unlocked the §f§lMine !");
             }
             if(Main.blockMined == 5000){
-                Bukkit.broadcastMessage("§a§lVous avez débloqué l'§b§lOcéan !");
+                Bukkit.broadcastMessage("§a§lYou have unlocked the §b§lOcean !");
             }
             if(Main.blockMined == 10000){
-                Bukkit.broadcastMessage("§a§lVous avez débloqué le §c§lNether !");
+                Bukkit.broadcastMessage("§a§lYou have unlocked the §c§lNether !");
             }
             if(Main.blockMined == 25000){
-                Bukkit.broadcastMessage("§a§lVous avez débloqué l'§d§lEnd !");
+                Bukkit.broadcastMessage("§a§lYou have unlocked the §d§lEnd !");
             }
 
 
@@ -41,7 +41,7 @@ public class OnBlockBreak implements Listener {
             event.setCancelled(true);
             event.getBlock().breakNaturally();
             event.getBlock().setType(newBlock);
-            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§c§lBlocks minés: §6" + Main.blockMined));
+            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§c§lBlocks mined: §6" + Main.blockMined));
             if(newBlock == Material.CHEST){
                 int random = (int) (Math.random() * 10);
                 for(int i = 0; i < random; i++){

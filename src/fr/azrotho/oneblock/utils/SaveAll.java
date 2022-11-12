@@ -33,7 +33,7 @@ public class SaveAll extends BukkitRunnable {
         }
 
         for(Player p : Bukkit.getOnlinePlayers()){
-            p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§a§lLa partie été sauvegardée avec succès!"));
+            p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§a§lGame Saved."));
         }
     }
 }
